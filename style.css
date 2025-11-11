@@ -1,0 +1,160 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #131212;
+  line-height: 1.6;
+}
+
+header {
+  background: #e7972e;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: white;
+  padding: 50px 20px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(2, 2, 2, 0.2);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  color: #222;
+  font-size: 28px;
+}
+
+.about-text h3 {
+  color: #06c1f0;
+  margin-bottom: 10px;
+}
+
+.projects {
+  background: #fafafa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+footer {
+  background: #e7972e;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #2994f8;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about, .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 100%;
+  }
+}
